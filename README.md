@@ -231,20 +231,6 @@ function MyCustomDevtools() {
 }
 ```
 
-## Tree-Shaking
-
-The package is designed for optimal tree-shaking:
-
-- React components are only loaded when importing from `/components`
-- The `DevtoolsProtocolLayer` is a no-op in production when conditionally imported
-- Type annotations from `Rpc.mutation()`/`Rpc.query()` have zero runtime cost
-
-```typescript
-// This pattern ensures devtools code is removed in production builds
-export const RpcProtocolLive = import.meta.env.DEV
-  ? Layer.provideMerge(DevtoolsProtocolLayer, BaseProtocolLive)
-  : BaseProtocolLive
-```
 
 ## License
 
