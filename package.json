@@ -1,12 +1,33 @@
 {
-	"name": "@hazel/rpc-devtools",
+	"name": "effect-rpc-tanstack-devtools",
+	"private": false,
 	"version": "0.1.0",
 	"type": "module",
-	"main": "src/index.ts",
+	"main": "dist/index.mjs",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.mts",
 	"exports": {
-		".": "./src/index.ts",
-		"./builders": "./src/builders.ts",
-		"./components": "./src/components/index.ts"
+		".": {
+			"types": "./dist/index.d.mts",
+			"import": "./dist/index.mjs",
+			"default": "./dist/index.mjs"
+		},
+		"./builders": {
+			"types": "./dist/builders.d.mts",
+			"import": "./dist/builders.mjs",
+			"default": "./dist/builders.mjs"
+		},
+		"./components": {
+			"types": "./dist/components/index.d.mts",
+			"import": "./dist/components/index.mjs",
+			"default": "./dist/components/index.mjs"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"access": "public"
 	},
 	"scripts": {
 		"build": "tsdown",
