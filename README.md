@@ -1,8 +1,10 @@
-# @hazel/rpc-devtools
+# effect-rpc-tanstack-devtools
 
 Developer tools for [Effect RPC](https://effect.website/docs/rpc/introduction/) that integrate with [TanStack Devtools](https://tanstack.com/devtools).
 
-![Dark themed devtools panel showing RPC requests](https://via.placeholder.com/800x400?text=RPC+Devtools+Panel)
+<img width="1920" height="1440" alt="Shots Mockups 1x" src="https://github.com/user-attachments/assets/1394bbc8-d8e8-4d50-a7e3-7219b8200678" />
+
+
 
 ## Features
 
@@ -17,9 +19,9 @@ Developer tools for [Effect RPC](https://effect.website/docs/rpc/introduction/) 
 ## Installation
 
 ```bash
-npm install @hazel/rpc-devtools
+npm install effect-rpc-tanstack-devtools
 # or
-bun add @hazel/rpc-devtools
+bun add effect-rpc-tanstack-devtools
 ```
 
 ### Peer Dependencies
