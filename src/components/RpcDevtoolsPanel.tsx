@@ -1,10 +1,20 @@
 import { useEffect, useMemo, useState } from "react"
+import { setDebug } from "../event-client"
 import { clearRequests, useRpcRequests, useRpcStats } from "../store"
 import { RequestDetail } from "./RequestDetail"
 import { RequestList } from "./RequestList"
 import { injectKeyframes, styles } from "./styles"
 
-export function RpcDevtoolsPanel() {
+export interface RpcDevtoolsPanelOptions {
+	/** Enable debug logging for the event client. Default: false */
+	debug?: boolean
+}
+
+interface RpcDevtoolsPanelProps {
+	options?: RpcDevtoolsPanelOptions
+}
+
+export function RpcDevtoolsPanel({ options }: RpcDevtoolsPanelProps) {
 	const requests = useRpcRequests()
 	const stats = useRpcStats()
 	const [selectedId, setSelectedId] = useState<string | null>(null)
@@ -14,6 +24,11 @@ export function RpcDevtoolsPanel() {
 	useEffect(() => {
 		injectKeyframes()
 	}, [])
+
+	// Sync debug option with event client
+	useEffect(() => {
+		setDebug(options?.debug ?? false)
+	}, [options?.debug])
 
 	const filteredRequests = useMemo(() => {
 		if (!filter) return requests

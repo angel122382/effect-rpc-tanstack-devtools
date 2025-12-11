@@ -1,4 +1,4 @@
 export { RequestDetail } from "./RequestDetail"
 export { RequestList } from "./RequestList"
-export { RpcDevtoolsPanel } from "./RpcDevtoolsPanel"
+export { RpcDevtoolsPanel, type RpcDevtoolsPanelOptions } from "./RpcDevtoolsPanel"
 export { injectKeyframes, styles } from "./styles"
